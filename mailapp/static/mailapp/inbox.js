@@ -145,7 +145,7 @@ function loadEmail(emailData, fromMailbox) {
     detailedInfo.style.fontSize = '14px'
     detailedInfo.style.marginBottom = '10px'
     detailedInfo.innerHTML = `
-        <div>
+         <div>
             <span class="text-muted">From: </span>${emailData.sender}
             <span class="text-muted" style="float: right; font-size: 13px">${emailData.timestamp}<i class="far fa-star" style="margin-left: 16px"></i></span>
         </div>
@@ -175,6 +175,7 @@ function loadEmail(emailData, fromMailbox) {
     const replyButton = document.createElement("button");
     replyButton.innerHTML = "<i class=\"fas fa-arrow-circle-left\" style='margin-right: 5px'></i>Reply";
     replyButton.className = "email-btns btn btn-sm btn-outline-secondary";
+
     replyButton.addEventListener('click', function(event) {
         let subject = emailData.subject
         if (!emailData.subject.startsWith("Re: ")) {

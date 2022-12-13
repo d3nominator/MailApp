@@ -232,3 +232,8 @@ input.form-control.login-input:focus {
     font-size: 14px;
     margin-top: 80px;
 }
+
+.pics{
+    background-image: url("endless-constellation.svg");
+    z-index: 100;
+}

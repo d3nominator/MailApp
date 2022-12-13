@@ -15,6 +15,12 @@
     {% block script %}
     {% endblock %}  
 
+    <style>
+        body {
+            background-image: url("{% static 'mailapp/animated.svg' %}");
+         }
+    </style>
+
 </head>
 
 <body>
@@ -32,8 +38,8 @@
                     <ul class="navbar-nav mr-auto">
                     </ul>
                     {# Right side user email and logout button #}
-                    <div class="nav-link" style="color: #3c4043; font-weight: 500">{{ request.user.email }}</div>
-                    <a class="white-btn btn btn-sm" href="{% url 'logout' %}">Log Out</a>
+                    <div class="nav-link font-weight-bold" style="color: #0b0101; font-weight: 500">{{ request.user.email }}</div>
+                    <a class="white-btn btn font-weight-bold btn-sm round rounded-pill" href="{% url 'logout' %}">Log Out</a>
                 </div>
             {% endif %}
         </div>
