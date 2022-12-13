@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'mail/styles.css' %}">
-    <link href="{% static 'mail/css/all.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'mailapp/styles.css' %}">
+    <link href="{% static 'mailapp/css/all.css' %}" rel="stylesheet">
     
     {% block script %}
     {% endblock %}  
@@ -21,7 +21,7 @@
 
      <div class="navbar navbar-expand-md navbar-light" style="padding: 12px 32px">
             <a class="navbar-brand" href="{% url 'index' %}" style="color: #606060; margin-right: 38px">
-                <img src="{% static 'mail/mail_logo.png' %}" height="30px" class="d-inline-block align-top" alt="" style="margin-right: 10px">
+                <img src="{% static 'mailapp/mail_logo.png' %}" height="30px" class="d-inline-block align-top" alt="" style="margin-right: 10px">
                 Mail
             </a>
             {% if request.user.is_authenticated %}
